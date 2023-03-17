@@ -21,27 +21,24 @@ body{
 }
 
 .social-icons {
-  position: absolute; /* Define a posição dos ícones sociais como absoluta em relação ao elemento pai */
+  position: fixed; /* Define a posição dos ícones sociais como absoluta em relação ao elemento pai */
   top: 0; /* Define a distância entre o topo do elemento pai e o topo dos ícones sociais como 0 */
-  left: 1700px; /* Define a distância entre a borda esquerda do elemento pai e a borda esquerda dos ícones sociais como 1700px */
+  left: 1820px; /* Define a distância entre a borda esquerda do elemento pai e a borda esquerda dos ícones sociais como 1700px */
 }
   
 .social-icons a {
-  display: inline-block; /* Define que os elementos de âncora dos ícones sociais serão exibidos como blocos em linha */
+  display: flex; /* Define que os elementos de âncora dos ícones sociais serão exibidos como blocos em linha */
   width: 30px; /* Define a largura dos ícones sociais como 30px */
   height: 30px; /* Define a altura dos ícones sociais como 30px */
-  margin: 5px; /* Define as margens dos ícones sociais como 5px em todas as direções */
-  text-align: center; /* Define que o conteúdo dos ícones sociais será centralizado horizontalmente */
+  margin: 30px; /* Define as margens dos ícones sociais como 30px em todas as direções */
   border-radius: 50%; /* Define a borda dos ícones sociais como arredondada com um raio de 50% do tamanho do elemento */
   background-color: #33333300; /* Define a cor de fundo dos ícones sociais como um tom de cinza semi-transparente (#333333) */
   color: #fff; /* Define a cor do texto dos ícones sociais como branco (#fff) */
   text-decoration: none; /* Remove o sublinhado padrão dos links */
   padding: 10px; /* Define o preenchimento interno dos ícones sociais como 10px em todas as direções */
+  gap: 30px;
 }
   
-.social-icons a:hover {
-  background-color: #742a00; /* Define a cor de fundo dos ícones sociais como azul escuro (#742a00) quando o cursor estiver sobre eles */
-}
 
 .social-icons a i {
   line-height: 30px; /* Define a altura da linha de texto dos ícones sociais como 30px para centralizar verticalmente o ícone dentro do elemento de âncora */
@@ -52,7 +49,7 @@ body{
   height: 50px; /* Define a altura da imagem dentro do ícone social como 50px */
   vertical-align: middle; /* Define o alinhamento vertical da imagem dentro do ícone social como centralizado */
 }
-  
+
 .logo{
   display: flex; /* Define o elemento com a classe .logo como um contêiner flexível */
   align-items: center; /* Define o alinhamento vertical do conteúdo dentro do contêiner .logo como centralizado */
@@ -96,8 +93,8 @@ main{
 }
 
 .logoimg{
-  width: 400px; /* define a largura do elemento como 400 pixels */
-  height: 250px; /* define a altura do elemento como 250 pixels */
+  width: 390px; /* define a largura do elemento como 400 pixels */
+  height: 230px; /* define a altura do elemento como 250 pixels */
   margin-left: 0px; /* define a margem esquerda do elemento como 0 pixels */
 }
 
@@ -152,6 +149,7 @@ main{
 
 .video1, .video2, .video3 {
   margin: 25px; /* margem externa */
+  margin-bottom: 0px;
   padding: 15px; /* preenchimento interno */
   background-color: rgba(255, 255, 255, 0.301); /* cor de fundo com transparência */
   border-radius: 15px; /* bordas arredondadas */
@@ -184,7 +182,8 @@ video::-webkit-media-controls-play-button {
 }
 
 footer{
-  display: flex; /* Define o layout do elemento como flexível */
+  display: grid;
   justify-content: center; /* Centraliza horizontalmente o conteúdo do elemento */
   align-items: end; /* Alinha o conteúdo do elemento no final */
+  width: auto;
 }
