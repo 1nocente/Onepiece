@@ -188,4 +188,5 @@ footer{
   justify-content: center; /* Centraliza horizontalmente o conteúdo do elemento */
   align-items: end; /* Alinha o conteúdo do elemento no final */
   grid-area: footer;
+  height: 10px;
 }
