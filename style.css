@@ -187,4 +187,5 @@ footer{
   display: flex; /* Define o layout do elemento como flexível */
   justify-content: center; /* Centraliza horizontalmente o conteúdo do elemento */
   align-items: end; /* Alinha o conteúdo do elemento no final */
+  grid-area: footer;
 }
