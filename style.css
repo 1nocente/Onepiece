@@ -1,205 +1,190 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0; /* Define que a margem externa de todos os elementos será igual a 0 */
+  padding: 0; /* Define que o preenchimento interno de todos os elementos será igual a 0 */
+  box-sizing: border-box; /* Define que a largura e a altura de todos os elementos incluem o conteúdo e a borda, mas não a margem externa e o preenchimento interno */
 }
+
 body{
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 100px 1fr 50px;
-    padding: 70px 70px 24px 30px;
-    background-image: url(IMG/Wallpaper.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%; /* Definir altura de 100% para o corpo */
-    overflow-y: auto; /* Permitir a rolagem da página somente no eixo y */
-    font-family: 'Righteous', cursive;
-    color: #000000;
-    font-size: large;
-    font-family: 'Luckiest Guy', cursive;
+  height: 100vh; /* Define a altura do corpo da página como 100% da altura da janela do navegador */
+  display: grid; /* Define que o corpo da página será organizado em um grid */
+  grid-template-rows: 100px 1fr 50px; /* Define as três linhas do grid, com altura de 100px, 1 fração de espaço e 50px respectivamente */
+  padding: 70px 70px 24px 30px; /* Define o preenchimento interno superior de 70px, preenchimento interno direito de 70px, preenchimento interno inferior de 24px e preenchimento interno esquerdo de 30px */
+  background-image: url(IMG/Wallpaper.jpg); /* Define a imagem de fundo como 'Wallpaper.jpg' que está localizada na pasta IMG */
+  background-repeat: no-repeat; /* Define que a imagem de fundo não será repetida */
+  background-size: cover; /* Define que a imagem de fundo se ajustará para cobrir todo o corpo da página */
+  height: 100%; /* Define a altura do corpo da página como 100% */
+  overflow-y: auto; /* Define o comportamento do corpo da página quando o conteúdo exceder a altura definida - neste caso, adicionará uma barra de rolagem vertical */
+  font-family: 'Righteous', cursive; /* Define a família de fontes a ser usada para o corpo da página */
+  color: #000000; /* Define a cor do texto como preto (#000000) */
+  font-size: large; /* Define o tamanho da fonte como grande */
+  font-family: 'Luckiest Guy', cursive; /* Define a família de fontes a ser usada para títulos e cabeçalhos */
 }
+
 .social-icons {
-    position: absolute;
-    top: 0;
-    left: 1700px;
-  }
+  position: absolute; /* Define a posição dos ícones sociais como absoluta em relação ao elemento pai */
+  top: 0; /* Define a distância entre o topo do elemento pai e o topo dos ícones sociais como 0 */
+  left: 1700px; /* Define a distância entre a borda esquerda do elemento pai e a borda esquerda dos ícones sociais como 1700px */
+}
   
-  .social-icons a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    text-align: center;
-    border-radius: 50%;
-    background-color: #33333300;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-
-
-  }
+.social-icons a {
+  display: inline-block; /* Define que os elementos de âncora dos ícones sociais serão exibidos como blocos em linha */
+  width: 30px; /* Define a largura dos ícones sociais como 30px */
+  height: 30px; /* Define a altura dos ícones sociais como 30px */
+  margin: 5px; /* Define as margens dos ícones sociais como 5px em todas as direções */
+  text-align: center; /* Define que o conteúdo dos ícones sociais será centralizado horizontalmente */
+  border-radius: 50%; /* Define a borda dos ícones sociais como arredondada com um raio de 50% do tamanho do elemento */
+  background-color: #33333300; /* Define a cor de fundo dos ícones sociais como um tom de cinza semi-transparente (#333333) */
+  color: #fff; /* Define a cor do texto dos ícones sociais como branco (#fff) */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  padding: 10px; /* Define o preenchimento interno dos ícones sociais como 10px em todas as direções */
+}
   
-  .social-icons a:hover {
-    background-color: #4267b2;
-  }
-  
-  .social-icons a i {
-    line-height: 30px;
-  }
+.social-icons a:hover {
+  background-color: #742a00; /* Define a cor de fundo dos ícones sociais como azul escuro (#742a00) quando o cursor estiver sobre eles */
+}
 
-  .social-icons a i img {
-    width: 50px;
-    height: 50px;
-    vertical-align: middle;
-  }
+.social-icons a i {
+  line-height: 30px; /* Define a altura da linha de texto dos ícones sociais como 30px para centralizar verticalmente o ícone dentro do elemento de âncora */
+}
+
+.social-icons a i img {
+  width: 50px; /* Define a largura da imagem dentro do ícone social como 50px */
+  height: 50px; /* Define a altura da imagem dentro do ícone social como 50px */
+  vertical-align: middle; /* Define o alinhamento vertical da imagem dentro do ícone social como centralizado */
+}
   
 .logo{
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    
-
-    
+  display: flex; /* Define o elemento com a classe .logo como um contêiner flexível */
+  align-items: center; /* Define o alinhamento vertical do conteúdo dentro do contêiner .logo como centralizado */
+  gap: 24px; /* Define o espaçamento horizontal entre os elementos filho dentro do contêiner .logo como 24px */
 }
 
 .logo__text{
-
-font-size: 23px;
-font-weight: 100;
-background-color: rgba(200, 200, 200, 0.603);
-border-radius: 10px;
-padding: 5px;
+  font-size: 23px; /* Define o tamanho da fonte do texto dentro do elemento com a classe .logo__text como 23px */
+  font-weight: 100; /* Define a espessura da fonte do texto dentro do elemento com a classe .logo__text como 100 (mais leve que o padrão) */
+  background-color: rgba(200, 200, 200, 0.603); /* Define a cor de fundo do elemento com a classe .logo__text como um tom de cinza semi-transparente (rgba(200, 200, 200, 0.603)) */
+  border-radius: 10px; /* Define a borda do elemento com a classe .logo__text como arredondada com um raio de 10px */
+  padding: 5px; /* Define o preenchimento interno do elemento com a classe .logo__text como 5px em todas as direções */
 }
 
 main{
-   display:grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-   display: flexbox;
-   gap: 5px;
-   flex-wrap: wrap;
-  justify-content: space-between;
-
-
+  display:grid; /* Define o elemento <main> como um contêiner de grid */
+  grid-template-columns: 1fr 1fr; /* Define o layout de duas colunas iguais */
+  grid-template-rows: 1fr 1fr; /* Define o layout de duas linhas iguais */
+  display: flexbox; /* Define o elemento <main> como um contêiner flexível */
+  gap: 5px; /* Define o espaçamento entre os elementos filho dentro do contêiner <main> como 5px */
+  flex-wrap: wrap; /* Define que os elementos filho dentro do contêiner <main> podem ser quebrados para outra linha se o espaço for insuficiente */
+  justify-content: space-between; /* Define o alinhamento horizontal dos elementos filho dentro do contêiner <main> como distribuídos uniformemente com espaços iguais entre eles */
 }
 
 .title{
-    position: relative;
-    grid-column: 1/-1;
-    place-self: left;
-    
+  position: relative; /* Define a posição do elemento <div class="title"> como relativa em relação ao seu contêiner pai */
+  grid-column: 1/-1; /* Define que o elemento <div class="title"> ocupará todas as colunas do grid layout */
+  place-self: left; /* Define a posição do elemento <div class="title"> em relação ao eixo horizontal */
 }
+
 .title__text{
-    color: rgb(220, 220, 220);
-    font-size: 18px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39);
-    letter-spacing: 1px;
-    line-height: 18px;
-background-color: rgba(0, 0, 0, 0.212);
-border-radius: 10px;
-display: inline-block;
-padding: 10px;
+  color: rgb(220, 220, 220); /* Define a cor do texto dentro do elemento <div class="title__text"> como um tom de cinza claro */
+  font-size: 18px; /* Define o tamanho da fonte do texto dentro do elemento <div class="title__text"> como 18px */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39); /* Adiciona uma sombra de texto sutil ao elemento <div class="title__text"> */
+  letter-spacing: 1px; /* Define o espaçamento entre as letras do texto dentro do elemento <div class="title__text"> como 1px */
+  line-height: 18px; /* Define a altura da linha do texto dentro do elemento <div class="title__text"> como 18px */
+  background-color: rgba(0, 0, 0, 0.212); /* Define a cor de fundo do elemento <div class="title__text"> como um tom de preto transparente */
+  border-radius: 10px; /* Define o raio das bordas arredondadas do elemento <div class="title__text"> como 10px */
+  display: inline-block; /* Define o elemento <div class="title__text"> como um bloco de nível de linha com altura e largura ajustáveis ao seu conteúdo */
+  padding: 10px; /* Define o preenchimento interno do elemento <div class="title__text"> como 10px em todas as direções */
 }
+
 .logoimg{
-
-width: 400px;
-height: 250px;
-margin-left: 0px;
-
-
+  width: 400px; /* define a largura do elemento como 400 pixels */
+  height: 250px; /* define a altura do elemento como 250 pixels */
+  margin-left: 0px; /* define a margem esquerda do elemento como 0 pixels */
 }
+
 .info{ 
-    place-self: end start ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-   
-}
+  place-self: end start ; /* alinha o elemento no canto inferior esquerdo do grid */
+  display: flex; /* define o elemento como um flex container */
+  flex-wrap: wrap; /* permite que os itens do flex container quebrem em várias linhas */
+  justify-content: space-around; /* distribui os itens do flex container igualmente ao redor do eixo principal */
+} 
 
 .info__title{
-    width: 33.33%;
-    max-width: 1000px;
-    box-sizing: border-box;
-    padding-block-end: 10px;
-    margin-block-end: 20px; /* Adiciona uma margem inferior de 20 pixels */
+  width: 33.33%; /* define a largura do elemento como 1/3 do container pai */
+  max-width: 1000px; /* define a largura máxima do elemento como 1000 pixels */
+  box-sizing: border-box; /* inclui a borda e o preenchimento do elemento em sua largura e altura */
+  padding-block-end: 10px; /* adiciona preenchimento na parte inferior do elemento */
+  margin-block-end: 20px; /* adiciona margem na parte inferior do elemento */
 }
 
 .info__text{
-    font-size: 20px;
-    width: 500px;
-
+  font-size: 20px; /* define o tamanho da fonte como 20 pixels */
+  width: 500px; /* define a largura do elemento como 500 pixels */
 }
 
 .video1{
-
-    width: 300px;
-    height: 200px;
-    display:grid;
-    float: left;
-   
-
+  width: 300px; /* define a largura do elemento como 300 pixels */
+  height: 200px; /* define a altura do elemento como 200 pixels */
+  display:grid; /* define a exibição como grid */
+  float: left; /* define o alinhamento do elemento à esquerda */
 }
 
 .video2{
-
-    width: 300px;
-    height: 200px;
-    display: block;
-    float: left;
-
+  width: 300px; /* define a largura do elemento como 300 pixels */
+  height: 200px; /* define a altura do elemento como 200 pixels */
+  display: block; /* define a exibição como bloco */
+  float: left; /* define o alinhamento do elemento à esquerda */
 }
 
 .video3{
-
-    width: 300px;
-    height: 200px;
-    display: block;
-    float: left;
-
+  width: 300px; /* define a largura do elemento como 300 pixels */
+  height: 200px; /* define a altura do elemento como 200 pixels */
+  display: block; /* define a exibição como bloco */
+  float: left; /* define o alinhamento do elemento à esquerda */
 }
 
 .video1 iframe, .video2 iframe, .video3 iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute; /* posição absoluta para preencher a caixa */
+  top: 0;
+  left: 0;
 }
+
 .video1, .video2, .video3 {
-    margin: 20px; /* Adiciona uma margem externa de 10 pixels para espaçamento */
-    padding: 15px; /* Adiciona uma margem interna de 10 pixels para espaçamento */
-    background-color: rgba(255, 255, 255, 0.301);
-    border-radius: 15px;
-  }
+  margin: 25px; /* margem externa */
+  padding: 15px; /* preenchimento interno */
+  background-color: rgba(255, 255, 255, 0.301); /* cor de fundo com transparência */
+  border-radius: 15px; /* bordas arredondadas */
+}
   
 
 video::-webkit-media-controls {
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #fff;
-  }
-
-  video::-webkit-media-controls-play-button {
-    background-color: transparent;
-    border-color: #fff;
-  }
-.action{
-    place-self: end;
-    width: 400px;
-    height: 100px;
-    background-color: #8E4106;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 48px;
-    color: #fff;
-    text-decoration: none;
-
+  display: flex; /* Define o layout dos controles de mídia como flexível */
+  background-color: rgba(255, 255, 255, 0.5); /* Define a cor de fundo dos controles de mídia com transparência */
+  color: #fff; /* Define a cor do texto dos controles de mídia */
 }
+
+/* Define o estilo do botão de reprodução dos controles de mídia do vídeo no navegador Chrome e Safari */
+video::-webkit-media-controls-play-button {
+  background-color: transparent; /* Define a cor de fundo do botão de reprodução como transparente */
+  border-color: #fff; /* Define a cor da borda do botão de reprodução como branco */
+}
+
+.action{
+  place-self: end; /* Alinha o elemento no final do grid */
+  width: 400px; /* Define a largura do elemento como 400 pixels */
+  height: 100px; /* Define a altura do elemento como 100 pixels */
+  background-color: #8E4106; /* Define a cor de fundo do elemento como marrom */
+  display: flex; /* Define o layout do elemento como flexível */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo do elemento */
+  align-items: center; /* Centraliza verticalmente o conteúdo do elemento */
+  font-size: 48px; /* Define o tamanho da fonte como 48 pixels */
+  color: #fff; /* Define a cor do texto como branco */
+  text-decoration: none; /* Remove o sublinhado do texto */
+}
+
 footer{
-    
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    
+  display: flex; /* Define o layout do elemento como flexível */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo do elemento */
+  align-items: end; /* Alinha o conteúdo do elemento no final */
 }
